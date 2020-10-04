@@ -1,3 +1,10 @@
+"""
+https://www.selenium.dev/documentation/en/
+
+At the core of Selenium is WebDriver, an interface to write instruction sets that can be run interchangeably in many browsers.
+Here is one of the simplest instructions you can make:
+"""
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
