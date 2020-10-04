@@ -1,6 +1,6 @@
 # selenium_browser_automation_documentation_python
 
-This repository contains some important instructions and tests from Selenium official website https://www.selenium.dev/.
+This repository contains some important instructions and tests from Selenium official website https://www.selenium.dev/
 
 They can help to understand how successfully we can use Selenium as a test automation tool.
 
