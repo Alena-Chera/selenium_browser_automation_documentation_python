@@ -1,6 +1,13 @@
 """
-Windows and tabs: https://www.selenium.dev/documentation/en/webdriver/browser_manipulation/
+https://www.selenium.dev/documentation/en/webdriver/browser_manipulation/
 
+Get window handle:
+You can get the window handle of the current window by using this command
+driver.current_window_handle
+"""
+
+"""
+Switching windows or tabs:
 """
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
@@ -38,3 +45,53 @@ with webdriver.Chrome() as driver:
 
     driver.delete_all_cookies()
     driver.quit()
+
+"""
+Create new window( or) new tab and switch:
+"""
+# Opens a new tab and switches to new tab
+driver.switch_to.new_window('tab')
+
+# Opens a new window and switches to new window
+driver.switch_to.new_window('window')
+
+"""
+Closing a window or tab:
+"""
+# Close the tab or window
+driver.close()
+
+# Switch back to the old tab or window
+driver.switch_to.window(original_window)
+
+"""
+Quitting the browser at the end of a session:
+"""
+driver.quit()
+
+
+# Some test frameworks offer methods and annotations
+# which you can hook into to tear down at the end of a test:
+# unittest teardown
+# https://docs.python.org/3/library/unittest.html?highlight=teardown#unittest.TestCase.tearDown
+def tearDown(self):
+    self.driver.quit()
+
+# try / finally:
+# If not running WebDriver in a test context,
+# you may consider using try / finally which is offered by most languages
+# so that an exception will still clean up the WebDriver session:
+
+# try:
+# # WebDriver code here...
+# finally:
+#     driver.quit()
+
+# with keyword:
+# Python’s WebDriver now supports the python context manager,
+# which when using the with keyword can automatically quit the driver at the end of execution:
+# with webdriver.Firefox() as driver:
+#   # WebDriver code here...
+# # WebDriver will automatically quit after indentation
+
+
