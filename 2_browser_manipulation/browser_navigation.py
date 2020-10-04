@@ -1,7 +1,7 @@
 """
-Browser navigation:
 https://www.selenium.dev/documentation/en/webdriver/browser_manipulation/
 
+Browser navigation:
 """
 
 from selenium import webdriver
