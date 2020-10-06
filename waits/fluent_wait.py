@@ -1,5 +1,8 @@
 """
-FluentWait
+https://www.selenium.dev/documentation/en/webdriver/waits/
+
+ FluentWait
+
 FluentWait instance defines the maximum amount of time to wait
 for a condition, as well as the frequency with which to check the condition.
 

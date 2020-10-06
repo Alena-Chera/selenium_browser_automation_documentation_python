@@ -1,3 +1,9 @@
+"""
+https://www.selenium.dev/documentation/en/webdriver/waits/
+
+ Explicit wait
+"""
+
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -19,6 +25,9 @@ assert el.text == "Hello from JavaScript!"
 el = WebDriverWait(driver).until(lambda d: d.find_element_by_tag_name("p"))
 assert el.text == "Hello from JavaScript!"
 
+"""
+ Expected conditions
+"""
 
 # The wait lets you pass in an argument to override the timeout:
 # WebDriverWait(driver, timeout=3).until(some_condition)

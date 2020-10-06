@@ -1,3 +1,9 @@
+"""
+https://www.selenium.dev/documentation/en/webdriver/waits/
+
+ Implicit wait
+"""
+
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 
