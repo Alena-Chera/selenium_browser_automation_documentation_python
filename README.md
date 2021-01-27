@@ -1,4 +1,4 @@
-# selenium_browser_automation_documentation_python
+# Selenium | WebDriver | Python | documentation
 
 This repository contains some important instructions and tests from Selenium official website https://www.selenium.dev/
 
