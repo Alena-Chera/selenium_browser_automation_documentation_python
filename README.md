@@ -1,6 +1,7 @@
 # Selenium | WebDriver | Python | documentation
 
-This repository contains some important instructions and tests from Selenium official website https://www.selenium.dev/
+This repository contains some important instructions and tests from Selenium official website 
+https://www.selenium.dev/
 https://www.selenium.dev/documentation/en/webdriver/
 
 It can help to understand how successfully use Selenium as a test automation tool.
